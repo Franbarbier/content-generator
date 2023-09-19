@@ -1,0 +1,2 @@
+
+export const CREATE_CONTENT = 'CREATE_CONTENT'
