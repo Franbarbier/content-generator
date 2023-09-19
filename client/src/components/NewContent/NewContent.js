@@ -17,6 +17,7 @@ const NewContent = ({  }) => {
   // const dispatch = useDispatch()
 
   function handleCreateCont(){
+    
         let dummy_content = {
           nombre: "contenido de prueba",
           zip_url : "compriminido.zip",

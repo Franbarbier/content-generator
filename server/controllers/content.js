@@ -12,11 +12,10 @@ import Content from '../models/content.js';
 // }
 
 export const createNewContent = async(req, res) =>{
-    
-    console.log(req.body)
+
     const cont = req.body;
     const createNewContent = new Content(cont);
-    console.log(createNewContent)
+    
     try{
         await createNewContent.save();
         res.status(201).json(createNewContent)
