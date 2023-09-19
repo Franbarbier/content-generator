@@ -3,6 +3,8 @@ import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
 import cors from 'cors'
 // import multer from 'multer'
+require('dotenv').config();
+
 
 // import {Storage} from '@google-cloud/storage'
 import contentRoutes from './routes/content.js';
@@ -49,6 +51,8 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 5001
 // const CONNECTION_URL = process.env.MONGODB_URL || ''
 const CONNECTION_URL = "mongodb+srv://franbarbier:Contentgenerator123@content-generator.t2o7sfq.mongodb.net/"
+
+console.log(process.env.MONGODB_URL)
 
 mongoose.connect(CONNECTION_URL, 
     {useNewUrlParser: true, useUnifiedTopology: true})

@@ -3,7 +3,6 @@ import Content from '../models/content.js';
 
 // export const getContents = async (req, res)=>{
     
-
 //     try{
 //         const content = await Content.find().sort({createdAt: 'desc'});
 //         res.status(200).json(content)
@@ -37,7 +36,7 @@ export const createNewContent = async(req, res) =>{
 
 // export const updateContent = async (req, res) =>{
 
-//     const plataforma = req.body.edited_platform;
+//     const plataforma = req.body.edited_content;
 //     const filter = {_id: plataforma._id}
 //     var plataformaToUpdate = await Content.findOneAndUpdate(filter, plataforma, {new: true})
 
